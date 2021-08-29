@@ -700,7 +700,7 @@
           :items="dropdownItemsFiltered"
           @searchInputChange="dropdownInputChange"
           :multiple="true"
-          :enable_select_all="true"
+          :enableSelectAll="true"
           @change="changeEvent"
           v-model="multiSelect"
           :searchable="true"
