@@ -344,6 +344,9 @@ export default {
     },
     setAllOptions(mounted=false) {
       let items = [...this.items];
+      if (mounted) {
+        items = [...this.value]
+      }
       if (this.multiple && this.enableSelectAll) {
         this.allOptionsSelected = this.selectedItems.length === this.getItems(items).length && this.enableSelectAll;
         this.allSelected = this.allOptionsSelected;
